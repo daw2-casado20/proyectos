@@ -1,0 +1,34 @@
+<?php
+session_unset();
+?>
+<html>
+ <head>
+  <title>Inicia sensión</title>
+ </head>
+ <body>
+  <form method="post" action="N2P1AdrianCasado2.php">
+    <p>Su nombre: <input type="text" name="nombre" /></p>
+    <p>Su edad: <input type="text" name="edad" /></p>
+   <p>Introduce nombre de usuario: 
+    <input type="text" name="user"/>
+   </p>
+   <p>Introduce contraseña: 
+    <input type="password" name="pass"/>
+   </p>
+   <p>
+    <input type="submit" name="submit" value="Submit"/>
+   </p>
+  </form>
+ </body>
+</html>
+<?php
+$myfavmusic = urlencode("Rap nop");
+echo "<a href='N2P1AdrianCasado2.php?favmusic=$myfavmusic'>";
+echo "Clica para mas informacion sobre la musica!"; 
+echo "</a>";
+?>
+
+
+
+
+
