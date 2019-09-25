@@ -1,0 +1,54 @@
+<?php
+session_start();
+$_SESSION['authuser'] = "1";
+$_SESSION['firstname'] = "Manolo";
+$_SESSION['lastname'] = "Adri";
+setcookie("username","Javi",time()+50);
+?>
+
+<?php
+$nombre_usuario = $_GET['user'] ?? 'nadie';
+?>
+<?php
+session_start();
+
+//Check username and password information
+if ($_SESSION['authuser'] != 1){
+    echo "Sorry, but you don't have permission to view this page!";
+    exit();     
+}
+?>
+<html>
+ <head>
+  <title>Mi sitio de musica <?php echo $_GET['favmusic'];?></title>
+ </head>
+ <body>
+<?php
+echo "Bienvenido, ";
+echo $nombre_usuario;
+echo " <br/>";
+
+echo "Mi musica favorita es ";
+echo $_GET['favmusic'];
+echo " <br/>";
+$musicrate = 10;
+echo "La nota que le pones a esta musica: ";
+echo $musicrate;
+?>
+<p>Dia y hora actual:</p>
+<?php //Ejemplo curso PHP aprenderaprogramar.com
+$time = time();
+echo date("d-m-Y (H:i:s)", $time);
+echo " <br/>";
+?>
+
+Hola <?php echo ($_POST['nombre']); ?>.
+Usted tiene <?php echo (int)$_POST['edad']; ?> años
+Y su nombre de usuario a partir de ahora sera <?php echo ($_POST['user']); ?>.
+
+<?php
+echo '¡Hola ' . htmlspecialchars($_COOKIE["username"]) . '!';
+?>
+
+ </body>
+</html>
