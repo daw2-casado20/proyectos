@@ -1,0 +1,24 @@
+<?php
+
+echo"
+    <h2>Lista de cosas que he aprendido con esta practica.</h2>
+    <ol>
+        <li>Hacer un get</li>
+        <li>Hacer un post</li>
+        <li>Hacer sessions</li>
+        <li>Hacer cookies</li>
+        <li>Hacer url codes</li>
+        <li>Hacer un control de errores</li>
+        <li>Hacer funciones que te muestren la fecha actual</li>
+        <li>Declarar variables en php</li>
+        <li>Enlazar paginas de php entre si</li>
+        <li>Hacer formularios en php</li>
+    </ol>
+    <h2>Nota del documento y la del profesor.</h2>
+    <p>La nota del documento un 9 y para el profesor un 9.</p>
+    <h2>Mi nota como alumno seria.</h2>
+    <p>8.</p>    
+    <h2>Mejora para la practica.</h2>
+    <p>No necesita ninguna mejora ya que he entendido todo facilmente y bien.</p>
+    "
+    ?>
